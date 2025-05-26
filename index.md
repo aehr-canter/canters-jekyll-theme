@@ -1,4 +1,5 @@
 ---
+Title: Home
 ---
 
-# tonic-starter
+# Canter's Theme
