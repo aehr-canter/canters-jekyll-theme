@@ -1,5 +1,6 @@
 ---
-Title: Home
+title: Home
+layout: default
 ---
 
 # Canter's Theme
