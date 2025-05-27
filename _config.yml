@@ -1,5 +1,35 @@
-title: Canter's Theme
-description: ""
-encoding: utf-8
-
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
+
+title: "Canter's Theme"
+description: "A soft Japanese-inspired tumblrcore theme"
+encoding: utf-8
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme settings
+theme_settings:
+  header_text: "桜の夢" 
+  bio: "soft thoughts in digital petals"
+  show_excerpts: true
+  
+# Social links
+social:
+  twitter: ""
+  instagram: ""
+  github: ""
