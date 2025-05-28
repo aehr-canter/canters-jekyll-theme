@@ -15,3 +15,41 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 </head>
+
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-content">
+                <h1 class="site-title">
+                    <a href="{{ '/' | relative_url }}">{{ site.theme_settings.header_text | default: site.title }}</a>
+                </h1>
+                <p class="site-bio">{{ site.theme_settings.bio | default: site.description }}</p>
+            </div>
+            <nav class="site-nav">
+                <a href="{{ '/' | relative_url }}">home</a>
+                <a href="{{ '/archive' | relative_url }}">archive</a>
+                <a href="{{ '/about' | relative_url }}">about</a>
+            </nav>
+        </header>
+
+        <main class="site-content">
+            {{ content }}
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+                <div class="social-links">
+                    {% if site.social.twitter %}
+                        <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank">twitter</a>
+                    {% endif %}
+                    {% if site.social.instagram %}
+                        <a href="https://instagram.com/{{ site.social.instagram }}" target="_blank">instagram</a>
+                    {% endif %}
+                    {% if site.social.github %}
+                        <a href="https://github.com/{{ site.social.github }}" target="_blank">github</a>
+                    {% endif %}
+                </div>
+            </div>
+        </footer>
+    </div>
