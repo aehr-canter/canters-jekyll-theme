@@ -33,3 +33,11 @@ body {
     min-height: 100vh;
     position: relative;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
