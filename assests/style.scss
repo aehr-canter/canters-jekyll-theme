@@ -197,3 +197,164 @@ body {
     border: 1px solid rgba(212, 196, 232, 0.3);
     font-weight: 400;
 }
+
+.post {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(232, 196, 196, 0.1);
+    
+    .post-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $border-color;
+    }
+    
+    .post-title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: $text-dark;
+        line-height: 1.3;
+    }
+    
+    .post-meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+        time {
+            color: $text-light;
+            font-size: 0.95rem;
+        }
+    }
+    
+    .post-tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .post-content {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 32px 0 16px;
+            font-weight: 500;
+            color: $text-dark;
+        }
+        
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.7rem; }
+        h3 { font-size: 1.4rem; }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        a {
+            color: $soft-purple;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(212, 196, 232, 0.3);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                border-bottom-color: $soft-purple;
+            }
+        }
+        
+        blockquote {
+            border-left: 4px solid $accent-pink;
+            padding-left: 20px;
+            margin: 24px 0;
+            font-style: italic;
+            color: $text-medium;
+            background: rgba(248, 232, 232, 0.3);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        code {
+            background: rgba(232, 196, 196, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+        
+        pre {
+            background: rgba(45, 45, 45, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 24px 0;
+            
+            code {
+                background: none;
+                padding: 0;
+            }
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 24px 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 20px;
+            
+            li {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    
+    .post-footer {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid $border-color;
+    }
+    
+    .post-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        
+        a {
+            color: $text-medium;
+            text-decoration: none;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            max-width: 45%;
+            text-align: center;
+            
+            &:hover {
+                background: rgba(255, 255, 255, 0.8);
+                transform: translateY(-2px);
+            }
+        }
+        
+        .prev-post {
+            text-align: left;
+        }
+        
+        .next-post {
+            text-align: right;
+        }
+    }
+}
