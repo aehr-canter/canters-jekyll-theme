@@ -439,5 +439,18 @@ body {
         font-weight: 400;
     }
 
-    
-    
+    .archive-title {
+        font-size: 1.1rem;
+        font-weight: 400;
+        
+        a {
+            color: $text-dark;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+            &:hover {
+                color: $soft-purple;
+            }
+        }
+    }
+}
